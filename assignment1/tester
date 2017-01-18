@@ -1,0 +1,95 @@
+#!/bin/bash
+
+echo "YES TESTS"
+echo "-----------------------------------------------------------"
+echo "-a mode"
+./output sAHDEF
+./output jjsGDA
+./output jsssssssD
+./output jsssssssGDD
+./output jjjjsssssCBFBE
+./output sssssssssD
+./output jjjsssssBBG
+./output jsFGD
+./output jjjjsssssssBAHDA
+./output jjsssssssC
+echo "-b mode"
+./output -b bbb759nnnnC5
+./output -b 828nnnnnnD2
+./output -b bbb988nnnnnnnF8
+./output -b bbbb884nnnnnAEE8
+./output -b bb958nnnnnnnDAC5
+./output -b 373nnnnnnC7
+./output -b bb570nnnnnGGF7
+./output -b 828nnnnnnFAC2
+./output -b bbb858nnnnG5
+./output -b b911nnnnC1
+echo "-c mode"
+./output -c dddddddd423uuuuu324D
+./output -c ddddddd881uuuuuuu188A
+./output -c ddd798uuuuuuuuu897EBC
+./output -c ddd575u575H
+./output -c dddddd791uuuuuuuuu197DHC
+./output -c dddd167uuuuuuuuu761G
+./output -c dddddddd295uuuuuuuuu592F
+./output -c ddddd938uuu839HBCBA
+./output -c ddddddd927uuuuuuuuu729G
+./output -c ddddd796uuuuu697CEA
+echo "-----------------------------------------------------------"
+echo "NO TESTS"
+echo "-----------------------------------------------------------"
+echo "-a mode"
+./output -a eeeeesssBAE 
+./output -a jjjjqFCB
+./output -a gggnnnnnnnFGG
+./output -a jjjqqqA
+./output -a jjjjvvvGBE
+./output -a jjrrrEEFDG
+./output -a jjjjrrrrrrHFG
+./output -a bsssssssCBHEG
+./output -a jjjrrrrrrC
+./output -a xxxA
+echo "-b mode"
+./output -b 159nnnnnFCE159159159159
+./output -b bbb623wwwwwG623623623623
+./output -b b536nnnnF635
+./output -b aa445nnnnEHF4
+./output -b kk632nnnnnD3
+./output -b bbb514nnnnHGE514514514
+./output -b mmmmmm494nnnnnnE9
+./output -b eeeeeee11qqqqqqqqDFA1
+./output -b a65nnnnFEGDH5
+./output -b bb571xxxxxxxG7
+echo "-c mode"
+./output -c ddddddddd599uuuuuuu599599599599CGDAC 
+./output -c gggggggg69rr96G
+./output -c bbbb199qqqqqqqq991GCA
+./output -c e364uuu463FABDA
+./output -c ddd880yyy088FCE
+./output -c ddddddd756vvvvv657A
+./output -c dddddddd397tt793E
+./output -c dddddd633rrrrrrrr336F
+./output -c ggg240w042FCG
+./output -c iiiiiii261uuuuuuuuu162AFD
+echo "-----------------------------------------------------------"
+echo "Command Line Examples"
+echo "$ ./matchlab jsssssssCEH --> yes"
+./output jsssssssCEH
+echo "$ ./matchlab fffffffffsssssD -->  no"
+./output fffffffffsssssD
+echo "$ ./matchlab jsssssssCEH fffffffffsssssD -->  yes no"
+./output jsssssssCEH fffffffffsssssD
+echo "$ ./matchlab -t jsssssssCEH --> jsssssssCEH"
+./output -t jsssssssCEH
+echo "$ ./matchlab -t jsssssssCEH jjsssssssBHFFC --> jsssssssCEH jjsssssssBHFFC"
+./output -t jsssssssCEH jjsssssssBHFFC
+echo "$ ./matchlab -t -b b417nnnnnnH1 --> b417nnnnnnGH1"
+./output -t -b b417nnnnnnH1
+echo "$ ./matchlab -c -t ddddd867uuuuuuu768EGACB --> ddddd867uuuuuuu768EGACB"
+./output -c -t ddddd867uuuuuuu768EGACB
+echo "$ ./matchlab -c ddddd867uuuuuuu768EGACB --> yes"
+./output -c ddddd867uuuuuuu768EGACB
+echo "-----------------------------------------------------------"
+echo "Bad Argument Examples"
+./output asdfasdf asdfjasdflkja sdfasdfj alsdfj
+./output -t -a -b -c
